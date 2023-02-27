@@ -3,3 +3,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.form-container {
+    max-width: 800px ;
+    margin: 30vh auto 0;
+}
+
+.form-container form > * , #printResult {
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+form input, #submit {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+form input:focus {
+    outline: 3px solid gray;
+}
+#submit:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.success {
+    background-color: green;
+}
+.fail {
+    background-color: red;
+}
