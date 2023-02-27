@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Wise Dice</title>
+</head>
+    
+<body>
+    <div class="form-container" id="login-container">
+        <form>
+            <label for="userMail">Inserisci la tua mail per effettuare l'accesso.</label>
+            <input type="email" id="userMail" placeholder="mail@dominio.com" required="required" />
+            <button type="button" id="submit">Accedi</button>
+        </form>
+        <div id="printResult">
+
+        </div>
+    </div>
+
+    <div class="d-none" id="main-container">
+        <header>
+            <nav>
+                Bentornato, <span id="printUserName"></span> !
+                <button type="button" class="btn" id="log-out">Ritorna al login</button>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="text-center">Dice Game</h1>
+            <div class="container">
+                <div class="controls text-center">
+                    <button type="button" class="btn" id="roll-dice">
+                        Tira un dado
+                    </button>
+                </div>
+                <div id="game-log" class="text-center">
+                    <div id="game-log-text">
+                        Effettua una giocata per visualizzare il log. 
+                        <hr>
+                    </div>
+                    <button type="button" id="game-log-reset" class="btn">Resetta il log delle giocate</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
